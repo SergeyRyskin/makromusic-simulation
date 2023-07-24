@@ -52,11 +52,12 @@ https://github.com/golang-migrate/migrate
 [How to Create REST API by using Golang and PostgreSQL ?](https://dev.to/koddr/build-a-restful-api-on-go-fiber-postgresql-jwt-and-swagger-docs-in-isolated-docker-containers-475j)
 
 ## docker commands
- docker network create -d bridge dev-network
- docker build -t fiber .
+ `docker network create -d bridge dev-network`
+ 
+ `docker build -t fiber .`
 
 
- docker run --rm -d \
+ ` docker run --rm -d \
     --name dev-postgres \
     --network dev-network \
     -e POSTGRES_USER=postgres \
@@ -64,11 +65,11 @@ https://github.com/golang-migrate/migrate
     -e POSTGRES_DB=postgres \
     -v ${HOME}/dev-postgres/data/:/var/lib/postgresql/data \
     -p 5432:5432 \
-    postgres
+    postgres`
 
 
-    docker run --rm -d \
+`   docker run --rm -d \
     --name dev-fiber \
     --network dev-network \
     -p 5000:5000 \
-    fiber
+    fiber `
