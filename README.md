@@ -43,8 +43,32 @@ In short: It should be a code that creates a relationship, and if certain users 
 - Fiber [Fiber Golang documentation](https://docs.gofiber.io/)
 
 
+https://github.com/golang-migrate/migrate
+
 # Useful Links and Resources
 
 [Makromusic 😊](https://makromusic.com/)
 
 [How to Create REST API by using Golang and PostgreSQL ?](https://dev.to/koddr/build-a-restful-api-on-go-fiber-postgresql-jwt-and-swagger-docs-in-isolated-docker-containers-475j)
+
+## docker commands
+ docker network create -d bridge dev-network
+ docker build -t fiber .
+
+
+ docker run --rm -d \
+    --name dev-postgres \
+    --network dev-network \
+    -e POSTGRES_USER=postgres \
+    -e POSTGRES_PASSWORD=password \
+    -e POSTGRES_DB=postgres \
+    -v ${HOME}/dev-postgres/data/:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    postgres
+
+
+    docker run --rm -d \
+    --name dev-fiber \
+    --network dev-network \
+    -p 5000:5000 \
+    fiber
