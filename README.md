@@ -38,12 +38,9 @@ In short: It should be a code that creates a relationship, and if certain users 
 - Golang [More information about Golang](https://go.dev/)
 - Postgres [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - Redis [Redis Golang documentation](https://redis.io/docs/clients/go/)
-- Kafka [Sarama Kafka Golang documentation](https://github.com/Shopify/sarama)
+- Kafka [Confluent Kafka Golang documentation](https://docs.confluent.io/kafka-clients/go/current/overview.html)
 - gRPC [gRPC Golang documentation](https://grpc.io/docs/languages/go/quickstart/)
 - Fiber [Fiber Golang documentation](https://docs.gofiber.io/)
-
-
-https://github.com/golang-migrate/migrate
 
 # Useful Links and Resources
 
@@ -51,25 +48,10 @@ https://github.com/golang-migrate/migrate
 
 [How to Create REST API by using Golang and PostgreSQL ?](https://dev.to/koddr/build-a-restful-api-on-go-fiber-postgresql-jwt-and-swagger-docs-in-isolated-docker-containers-475j)
 
-## docker commands
- `docker network create -d bridge dev-network`
- 
- `docker build -t fiber .`
+# Not Working on Project
 
+## Kafka
+- Unfortunately, Kafka is not working on this project. **kafka** file is unusable... (I don't know why, I tried to fix about 3 day it but it didn't work)
 
- ` docker run --rm -d \
-    --name dev-postgres \
-    --network dev-network \
-    -e POSTGRES_USER=postgres \
-    -e POSTGRES_PASSWORD=password \
-    -e POSTGRES_DB=postgres \
-    -v ${HOME}/dev-postgres/data/:/var/lib/postgresql/data \
-    -p 5432:5432 \
-    postgres`
-
-
-`   docker run --rm -d \
-    --name dev-fiber \
-    --network dev-network \
-    -p 5000:5000 \
-    fiber `
+## PostgresSQL run command
+docker run --rm -d  --name dev-postgres  --network dev-network  -e POSTGRES_USER=postgres  -e POSTGRES_PASSWORD=password  -e POSTGRES_DB=postgres  -v ${HOME}/dev-postgres/data/:/var/lib/postgresql/data  -p 5432:5432  postgres 

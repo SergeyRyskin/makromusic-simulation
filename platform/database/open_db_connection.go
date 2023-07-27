@@ -1,6 +1,6 @@
 package database
 
-import "github.com/SergeyRyskin/makromusic-simulation/app/models/queries"
+import "github.com/SergeyRyskin/makromusic-simulation/app/queries"
 
 // Queries struct for collect all app queries.
 type Queries struct {

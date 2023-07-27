@@ -2,13 +2,13 @@ package main
 
 import (
     "github.com/gofiber/fiber/v2"
-    "github.com/koddr/tutorial-go-fiber-rest-api/pkg/configs" //TODO 
-    "github.com/koddr/tutorial-go-fiber-rest-api/pkg/middleware" //TODO 
-    "github.com/koddr/tutorial-go-fiber-rest-api/pkg/routes" //TODO 
-    "github.com/koddr/tutorial-go-fiber-rest-api/pkg/utils" //TODO 
+    "github.com/SergeyRyskin/makromusic-simulation/pkg/configs" 
+    "github.com/SergeyRyskin/makromusic-simulation/pkg/middleware" 
+    "github.com/SergeyRyskin/makromusic-simulation/pkg/routes" 
+    "github.com/SergeyRyskin/makromusic-simulation/pkg/utils" 
 
     _ "github.com/joho/godotenv/autoload"                // load .env file automatically
-    _ "github.com/koddr/tutorial-go-fiber-rest-api/docs" // load API Docs files (Swagger)
+    _ "github.com/SergeyRyskin/makromusic-simulation/docs" // load API Docs files (Swagger)
 )
 
 // @title API

@@ -2,7 +2,7 @@ package controllers
 
 import (
     "github.com/gofiber/fiber/v2"
-    "github.com/koddr/tutorial-go-fiber-rest-api/pkg/utils"
+    "github.com/SergeyRyskin/makromusic-simulation/pkg/utils"
 )
 
 // GetNewAccessToken method for create a new access token.

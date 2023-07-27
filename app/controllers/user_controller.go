@@ -3,11 +3,11 @@ package controllers
 import (
 	"time"
 
-	"github.com/SergeyRyskin/makromusic-simulation/app/models"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
-	"github.com/koddr/tutorial-go-fiber-rest-api/pkg/utils"
 
+    "github.com/SergeyRyskin/makromusic-simulation/app/models"
+	"github.com/SergeyRyskin/makromusic-simulation/pkg/utils"
 	"github.com/SergeyRyskin/makromusic-simulation/platform/database"
 )
 

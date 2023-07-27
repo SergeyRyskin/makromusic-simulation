@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/SergeyRyskin/makromusic-simulation/app/models/controllers"
+	"github.com/SergeyRyskin/makromusic-simulation/app/controllers"
 	"github.com/gofiber/fiber/v2"
 )
 
